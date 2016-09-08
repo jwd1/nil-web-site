@@ -223,18 +223,25 @@ border-radius: 30%;
 
 }
 
-
 </style>
 
 
 <body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.7";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 
-
+  <div class="navbar-fixed">
   <nav>
       <div class="nav-wrapper indigob">
         <span class="brand-logo right" id="jd_responsive"></span>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-        <ul class="left hide-on-med-and-down">
+        <ul class="right hide-on-med-and-down">
           <li role="presentation"><a href="#food">Food</a></li>
           <li role="presentation"><a href="#ordering">Ordering</a></li>
           <li role="presentation"><a href="#about">About</a></li>
@@ -249,6 +256,7 @@ border-radius: 30%;
 
       </div>
     </nav>
+  </div>
 
     <!-- Page Layout here -->
 
@@ -278,18 +286,20 @@ border-radius: 30%;
 
 
             <!-- Grey navigation panel -->
-            <br>
-            <h2 class="indigo-text1 text-center">Food</h2>
-            <i class="indigo-text2 material-icons medium iconFloat">thumb_up</i>
-            <p>All food is made using fresh ingredients (except where stated) and home ground spices.
-          All food is vegan except the paneer dishes. (Tofu versions available).
-          Local and UK produce is used where possible.
-          Only Coconut Oil is used to fry the hard spices.
-          Vegetarian versions contain organic butter.
-          Only sea salt or Himalayan Pink Salt is used.
-          No GM ingredients are used.
-          </p>
 
+            <div id="food">
+              <br><br>
+                <h2 class="indigo-text1 text-center">Food</h2>
+                <i class="indigo-text2 material-icons medium iconFloat">thumb_up</i>
+                <p>All food is made using fresh ingredients (except where stated) and home ground spices.
+              All food is vegan except the paneer dishes. (Tofu versions available).
+              Local and UK produce is used where possible.
+              Only Coconut Oil is used to fry the hard spices.
+              Vegetarian versions contain organic butter.
+              Only sea salt or Himalayan Pink Salt is used.
+              No GM ingredients are used.
+          </p>
+          </div>
 
 
 
@@ -299,17 +309,20 @@ border-radius: 30%;
 
 
           <div class="container">
+
           <div class="row z-depth-2 col s12" id="panel2">
             <!-- Grey navigation panel -->
-            <h2 class="indigo-text1 text-center">Ordering</h2>
-            <i class="indigo-text2 material-icons medium iconFloat">announcement</i>
-            <p>We have a selection from 10 dishes rotating at 2 per week. The portions are served in 750ml tubs.  As is normal in Indian home cooking, specific measurements are not used so the below measures are a rough guide of what each tub contains. Please click or tap on the dishes below for a list of thier ingredients</p>
+            <div id="ordering">
+              <br><br>
+              <h2 class="indigo-text1 text-center">Ordering</h2>
+              <i class="indigo-text2 material-icons medium iconFloat">announcement</i>
+              <p>We have a selection from 10 dishes rotating at 2 per week. The portions are served in 750ml tubs.  As is normal in Indian home cooking, specific measurements are not used so the below measures are a rough guide of what each tub contains. Please click or tap on the dishes below for a list of thier ingredients</p>
 
-            <p>A text is sent out on Friday evenings to confirm what is being cooked in the forthcoming week.</p>
+              <p>A text is sent out on Friday evenings to confirm what is being cooked in the forthcoming week.</p>
 
-            <p>Once a response has been received a delivery day will be arranged.
-            When you receive the food you have the option to consume it or store it for a few days (it will keep in the fridge for up to 5 days).</p>
-
+              <p>Once a response has been received a delivery day will be arranged.
+              When you receive the food you have the option to consume it or store it for a few days (it will keep in the fridge for up to 5 days).</p>
+            </div>
             <div id="hrStyle"></div>
             <br>
             <ul class="orderListStyle">
@@ -363,11 +376,13 @@ border-radius: 30%;
           <div class="container">
           <div class="col s12" id="page-content">
             <!-- Teal page content  -->
-            <br>
-            <h2 class="indigo-text1 text-center">About me</h2>
-            <i class="indigo-text2 material-icons medium iconFloat">assignment_ind</i>
-            <p>My aim is to provide fresh, homemade, authentic, tasty and affordable food whilst maintaining the ethos of eliminating food waste. To date this business has not had any, this is continually implemented by only ever purchasing what is required, vegetable peelings are composted and all packaging is recycled.</p>
 
+            <div id="about">
+              <br><br>
+              <h2 class="indigo-text1 text-center" id="about">About me</h2>
+              <i class="indigo-text2 material-icons medium iconFloat">assignment_ind</i>
+              <p>My aim is to provide fresh, homemade, authentic, tasty and affordable food whilst maintaining the ethos of eliminating food waste. To date this business has not had any, this is continually implemented by only ever purchasing what is required, vegetable peelings are composted and all packaging is recycled.</p>
+            </div>
 
             </div>
 
@@ -378,23 +393,33 @@ border-radius: 30%;
 
             <h2 class="indigo-text1 text-center">Testimonials</h2>
 
-            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fbopadum%2Fposts%2F10153738010848963%3A0&width=500" width="500" height="335" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 
-            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fruss.rcaine%2Fposts%2F10154304080696369%3A0&width=500" width="500" height="335" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-
-            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpixie.powwow%2Fposts%2F10153472950051938%3A0&width=500" width="500" height="335" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-
-            <br><br>
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fbopadum%2Fposts%2F10153738010848963%3A0&width=350&show_text=true&height=349&appId" width="350" height="349" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 
 
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fruss.rcaine%2Fposts%2F10154304080696369%3A0&width=350&show_text=true&height=330&appId" width="350" height="330" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpixie.powwow%2Fposts%2F10153472950051938%3A0&width=350&show_text=true&height=349&appId" width="350" height="349" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+            <br>
+
+            <p>Like Private Vegetarian Catering on FaceBook &nbsp
+            <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FPrivateVegetarianCaterer%2F&width=350&layout=button&action=like&size=large&show_faces=true&share=true&height=65&appId" width="350" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+          </p>
 
 
-            <h2 class="indigo-text1 text-center">Contact me</h2>
-            <i class="indigo-text2 material-icons medium iconFloat">new_releases</i>
-            <p>Place an order by filling out the form below or by phone or by email. Once a response has been received a delivery day will be arranged.
-            <br><br>
-            <div class="container well">
+            <br>
 
+
+
+            <div id="contact">
+              <br>
+                <h2 class="indigo-text1 text-center">Contact me</h2>
+                <i class="indigo-text2 material-icons medium iconFloat">new_releases</i>
+                <p>Place an order by filling out the form below or by phone or by email. Once a response has been received a delivery day will be arranged.
+                <br><br>
+                <div class="container well">
+            </div>
 
               <form class="form-horizontal" role="form">
                 <div class="form-group">
