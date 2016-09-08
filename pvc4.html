@@ -36,9 +36,10 @@ body {
 
 .indigo-text1 {
 
-  color: #ECD444;
-  text-shadow: 1px 1px 5px #000000;
-  letter-spacing: 5px;
+  //color: #ECD444;
+  color: #480080;
+  text-shadow: 1px 1px 2px #000000;
+  letter-spacing: 2px;
   font-size: 210%;
   margin-bottom: 5%;
 }
@@ -118,10 +119,10 @@ background-color: white;
 }
 
 #jd_logoStyle {
-margin-top: 5%;
+margin-top: 3%;
 border-radius: 10%;
-height: 120px;
-width: 120px;
+height: 170px;
+width: 170px;
 }
 
 #red {
@@ -175,9 +176,17 @@ button a:visited {
 #image1Style{
 
 border-radius: 30%;
+}
+
+.orderListStyle li {
+  list-style-type: square;
+  margin-left: 10%;
 
 
 }
+
+
+
 /* Portrait  ------------------------------------------------------------- */
 @media screen and (max-width: 480px)
  {
@@ -215,7 +224,7 @@ border-radius: 30%;
 
   <nav>
       <div class="nav-wrapper indigob">
-        <span class="brand-logo right" id="jd_responsive">Private Vegetarian Catering</span>
+        <span class="brand-logo right" id="jd_responsive"></span>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="left hide-on-med-and-down">
           <li role="presentation"><a href="#food">Food</a></li>
@@ -223,7 +232,7 @@ border-radius: 30%;
           <li role="presentation"><a href="#about">About</a></li>
            <li role="presentation"><a href="#contact">Contact</a></li>
         </ul>
-        <ul class="side-nav right" id="mobile-demo">
+        <ul class="side-nav right indigob" id="mobile-demo">
           <li role="presentation"><a href="#food">Food</a></li>
           <li role="presentation"><a href="#ordering">Ordering</a></li>
           <li role="presentation"><a href="#about">About</a></li>
@@ -238,16 +247,14 @@ border-radius: 30%;
     <div class="parallax-container parallax-size">
           <div class="parallax"><img src="images/background1.jpg"></div>
 
-          <a href="mailto:Nilaesh@hotmail.com" class="waves-effect waves-light btn indigob center-block ctaButtons"><i class="material-icons left">email</i>Place order by email</a>
-
-          <a href="tel:01902123456" class="waves-effect waves-light btn indigob center-block ctaButtons"><i class="material-icons left">phone</i>Place order by phone</a>
+          <img src="http://www.johnwdriscoll.com/images/PVCLogo2.jpg" class="img-responsive center-block" id="jd_logoStyle">
 
             </div>
 
     <div class="container">
         <div class="row z-depth-2 col s12" id="panel1">
 
-            <img src="http://www.johnwdriscoll.com/images/PVCLogo2.jpg" class="img-responsive center-block" id="jd_logoStyle">
+
 
             <div id="jdrow">
 
@@ -263,7 +270,7 @@ border-radius: 30%;
 
 
             <!-- Grey navigation panel -->
-
+            <br>
             <h2 class="indigo-text1 text-center">Food</h2>
             <i class="indigo-text2 material-icons medium iconFloat">thumb_up</i>
             <p>All food is made using fresh ingredients (except where stated) and home ground spices.
@@ -288,29 +295,7 @@ border-radius: 30%;
             <!-- Grey navigation panel -->
             <h2 class="indigo-text1 text-center">Ordering</h2>
             <i class="indigo-text2 material-icons medium iconFloat">announcement</i>
-            <p>A selection from 10 dishes rotating at 2 per week.
-            All priced at <strong>£6 each. 2 for £10</strong> every week.
-            (Prices increased for orders outside Wolverhampton)
-            Chapatti’s available @ <strong>4 for £1.</strong> Gluten Free available.
-            Rice or naan is not supplied. Small parties and events catered for, please contact us and we can discuss your requirements.</p>
-
-            <ul id="weekMenu">
-            <li class="text-center"><strong>WEEK 1</strong>
-            <li class="text-center"><em>Mung bean dahl or Paneer/Tofu, mushroom & spinach.</em></li>
-            <li class="text-center"><strong>WEEK 2</strong></li> <li class="text-center"><em>Chickpeas and Spinach curry or Mexican chilli (made with sweet potato).</em></li>
-            <li class="text-center"><strong>WEEK 3</strong>
-            <li class="text-center"><em>Urid bean dahl or Cauliflower & Peas.</em></li>
-            <li class="text-center"><strong>WEEK 4</strong></li>
-            <li class="text-center"><em>Butternut squash curry or Chilli Paneer/Tofu.</em></li>
-            <li class="text-center"><strong>WEEK 5</strong></li>
-            <li class="text-center"><em>Green Beans & Peas or Okra & Potatoes.</em></li>
-            </ul>
-            <br>
-
-            <p id="red">ALL CURRIES ARE GLUTEN FREE.
-            HOWEVER SOME OF THE SPICES USED HAVE PACKAGING THAT CONTAINS THE FOLLOWING STATEMENT: <em>"MADE IN A PLANT THAT HANDLES NUTS, SESAME, GLUTEN, WHEAT, SOYA & MUSTARD."</em>
-            </p>
-            <p>The portions are served in 750ml tubs.  As is normal in Indian home cooking, specific measurements are not used so the below measures are a rough guide of what each tub contains. Please click or tap on the dishes below for a list of thier ingredients</p>
+            <p>We have a selection from 10 dishes rotating at 2 per week. The portions are served in 750ml tubs.  As is normal in Indian home cooking, specific measurements are not used so the below measures are a rough guide of what each tub contains. Please click or tap on the dishes below for a list of thier ingredients</p>
 
             <p>A text is sent out on Friday evenings to confirm what is being cooked in the forthcoming week.</p>
 
@@ -318,13 +303,40 @@ border-radius: 30%;
             When you receive the food you have the option to consume it or store it for a few days (it will keep in the fridge for up to 5 days).</p>
 
             <div id="hrStyle"></div>
+            <br>
+            <ul class="orderListStyle">
 
-            <img id="image1Style" class="img-responsive center-block" src="images/1.jpg">
-
+                  <li>All priced at <strong>£6 each. 2 for £10</strong> every week.</li>
+                  <li>Chapatti’s available @ <strong>4 for £1.</strong> Gluten Free available.</li>
+                  <li>Rice or naan is not supplied.</li>
+                  <li>Small parties and events catered for, please contact us and we can discuss your requirements.</li>
+                  <li>Please note: Prices are increased for orders outside Wolverhampton.</li>
+            </ul>
             <br>
 
 
 
+            <ul id="weekMenu">
+            <li class="text-center"><strong>WEEK 1</strong>
+            <li class="text-center">Mung bean dahl or Paneer/Tofu, mushroom & spinach.</li>
+            <li class="text-center"><strong>WEEK 2</strong></li> <li class="text-center">Chickpeas and Spinach curry or Mexican chilli (made with sweet potato).</li>
+            <li class="text-center"><strong>WEEK 3</strong>
+            <li class="text-center">Urid bean dahl or Cauliflower & Peas.</li>
+            <li class="text-center"><strong>WEEK 4</strong></li>
+            <li class="text-center">Butternut squash curry or Chilli Paneer/Tofu.</li>
+            <li class="text-center"><strong>WEEK 5</strong></li>
+            <li class="text-center">Green Beans & Peas or Okra & Potatoes.</li>
+            </ul>
+            <br>
+
+            <p id="red">ALL CURRIES ARE GLUTEN FREE.
+            HOWEVER SOME OF THE SPICES USED HAVE PACKAGING THAT CONTAINS THE FOLLOWING STATEMENT: <em>"MADE IN A PLANT THAT HANDLES NUTS, SESAME, GLUTEN, WHEAT, SOYA & MUSTARD."</em>
+            </p>
+
+
+            <div id="hrStyle"></div>
+
+            <br>
 
 
 
@@ -343,7 +355,7 @@ border-radius: 30%;
           <div class="container">
           <div class="col s12" id="page-content">
             <!-- Teal page content  -->
-
+            <br>
             <h2 class="indigo-text1 text-center">About me</h2>
             <i class="indigo-text2 material-icons medium iconFloat">assignment_ind</i>
             <p>My aim is to provide fresh, homemade, authentic, tasty and affordable food whilst maintaining the ethos of eliminating food waste. To date this business has not had any, this is continually implemented by only ever purchasing what is required, vegetable peelings are composted and all packaging is recycled.</p>
@@ -351,14 +363,20 @@ border-radius: 30%;
 
             </div>
 
+
+
             <img src="http://www.johnwdriscoll.com/wp_images/foodstandards.png" class="img-responsive center-block" id="foodhImg">
+            
 
+            <h2 class="indigo-text1 text-center">Testimonials</h2>
 
-            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FPrivateVegetarianCaterer%2Fposts%2F1817154941848425&width=500" width="300" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fbopadum%2Fposts%2F10153738010848963%3A0&width=500" width="500" height="335" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 
-            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FPrivateVegetarianCaterer%2Fposts%2F1815864005310852&width=500" width="300" height="224" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fruss.rcaine%2Fposts%2F10154304080696369%3A0&width=500" width="500" height="335" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 
-            <br>
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpixie.powwow%2Fposts%2F10153472950051938%3A0&width=500" width="500" height="335" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+            <br><br>
 
 
 
@@ -400,7 +418,7 @@ border-radius: 30%;
 
           </div>
 
-    <footer class="page-footer indigo darken-4">
+    <footer class="page-footer indigo darken-4 indigob">
               <div class="container indigob">
                 <div class="row">
                   <div class="col l6 s12">
