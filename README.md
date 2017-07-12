@@ -27,4 +27,4 @@ Content requested to be displayed:
 * footer color needs to be changed to header colour.
 * heading colors need to be changed to same as header colour.
 
-## Client eventually opted for a wordpress site that I designed www.privatevegancating.co.uk
+## Client eventually opted for a wordpress site that I designed www.privatevegancatering.co.uk
